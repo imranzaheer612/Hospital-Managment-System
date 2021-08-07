@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" prefHeight="782.0" prefWidth="1047.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Patient.PatientDetailsEntry">
+   <children>
+      <VBox fx:id="vboxPati" alignment="BASELINE_LEFT" layoutY="-4.0" maxHeight="1.7976931348623157E308" prefHeight="782.0" prefWidth="204.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="patEntryAvatar" fitHeight="145.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="60.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label prefHeight="51.0" prefWidth="121.0" text="Enter Patient" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Consolas" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="11.0" layoutY="263.0" prefHeight="51.0" prefWidth="121.0" text="Details">
+               <font>
+                  <Font name="Consolas" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Label>
+         </children></VBox>
+      <GridPane fx:id="startgridPane" alignment="CENTER" layoutX="334.0" layoutY="134.0" prefHeight="483.0" prefWidth="546.0" AnchorPane.bottomAnchor="179.0" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="167.0" AnchorPane.topAnchor="120.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="0.0" prefWidth="56.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="192.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.0" minWidth="10.0" prefWidth="222.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.0" minWidth="10.0" prefWidth="72.33331298828125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="save" alignment="CENTER" mnemonicParsing="false" onAction="#confirmData" prefHeight="30.0" prefWidth="113.0" text="Save" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="14" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Label fx:id="firstnameL" alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="37.0" prefHeight="32.0" prefWidth="109.0" text="Fisrt Name" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="firstName" alignment="CENTER" layoutX="196.0" layoutY="41.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="lastName" alignment="CENTER" layoutX="196.0" layoutY="126.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Consolas" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="gender" alignment="CENTER" layoutX="196.0" layoutY="296.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Consolas" size="13.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lastnameL" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="65.0" prefHeight="32.0" prefWidth="109.0" text="Last Name" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="birthL" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="112.0" prefHeight="32.0" prefWidth="109.0" text="Birthday" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="genderL" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="158.0" prefHeight="32.0" prefWidth="109.0" text="Gender" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="weightL" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="250.0" prefHeight="32.0" prefWidth="109.0" text="Wreight" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="addressL" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="296.0" prefHeight="32.0" prefWidth="109.0" text="Address" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="weight" alignment="CENTER" layoutX="196.0" layoutY="255.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="address" alignment="CENTER" layoutX="196.0" layoutY="301.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Consolas" size="13.0" />
+               </font>
+            </TextField>
+            <Label fx:id="contactL" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="342.0" prefHeight="32.0" prefWidth="109.0" text="Contact No" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="contactNo" alignment="CENTER" layoutX="196.0" layoutY="347.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Consolas" size="13.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="birthDate" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </DatePicker>
+            <Line endX="897.57861328125" endY="-2.416110038757324" startX="578.952392578125" startY="-2.0017340183258057" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Line>
+            <Button fx:id="backButtonEntry" alignment="CENTER" layoutX="313.0" layoutY="417.0" mnemonicParsing="false" onAction="#backToOptions" prefHeight="30.0" prefWidth="113.0" text="Back" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="13" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Label fx:id="roomNoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="67.0" layoutY="274.0" prefHeight="32.0" prefWidth="109.0" text="Room No" GridPane.columnIndex="1" GridPane.rowIndex="11">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Line endX="897.57861328125" endY="-2.416110038757324" layoutX="-501.0" layoutY="329.0" startX="578.952392578125" startY="-2.0017340183258057" GridPane.columnIndex="1" GridPane.rowIndex="12">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Line>
+            <ComboBox fx:id="roomsSelector" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+            <DatePicker fx:id="diseaseDate" layoutX="260.0" layoutY="138.0" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Label fx:id="diseaseDateLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="67.0" layoutY="253.0" prefHeight="32.0" prefWidth="109.0" text="Date of Disease" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
