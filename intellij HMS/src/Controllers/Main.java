@@ -11,12 +11,12 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        // Testing the Database
+//        Testing the Database
 //        testingDB();
 //        presentDateTime();
 
 
-        Parent root = FXMLLoader.load(getClass().getResource("../fxfiles/authenticate/loginPage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../View/UserAuthentication/loginPage.fxml"));
 //        Parent root = FXMLLoader.load(getClass().getResource("../View/startupPage.fxml"));
         primaryStage.setTitle("Hospital");
         primaryStage.setScene(new Scene(root));
