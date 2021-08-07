@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchor" prefHeight="782.0" prefWidth="1047.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Patient.AllCurrentPatients">
+   <children>
+      <VBox fx:id="vboxPati" alignment="BASELINE_LEFT" layoutY="-4.0" maxHeight="1.7976931348623157E308" prefHeight="782.0" prefWidth="132.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="tableview" fitHeight="95.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label prefHeight="28.0" prefWidth="124.0" text="Available Patients">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="vboxtable" layoutX="175.0" layoutY="48.0" prefHeight="685.0" prefWidth="840.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="32.0">
+         <children>
+            <TableView fx:id="allPatTable" prefHeight="568.0" prefWidth="840.0" />
+            <Button fx:id="backButtonEntry" alignment="CENTER" mnemonicParsing="false" onAction="#backToOptions" prefHeight="30.0" prefWidth="113.0" text="Back" translateX="550.0" translateY="10.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

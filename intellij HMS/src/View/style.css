@@ -1,0 +1,253 @@
+#loginBack {
+    -fx-background-image: url("Images/hmss.jpeg");
+    -fx-background-repeat: no-repeat no-repeat;
+    -fx-background-size: 100% 100%;
+
+    /*-fx-background-size: 900 506;*/
+    -fx-background-position: center center;
+}
+
+#doctorAvatar {
+    -fx-image: url("Images/doctor.png");
+}
+
+#receiptAvatar {
+    -fx-image: url("Images/receipt.png");
+}
+
+
+#OptionsAvatar {
+    -fx-image: url("Images/medical.png");
+}
+
+
+#patEntryAvatar {
+    -fx-image: url("Images/patientEntry.png");
+
+}
+
+#tableview {
+    -fx-image: url("Images/table.png");
+
+}
+
+#patOptionsAvatar {
+    -fx-image: url("Images/patient.png");
+
+}
+
+#diagnosisAvatar {
+    -fx-image: url("Images/diagnosis.png");
+}
+
+
+#truckImage {
+    -fx-image: url("Images/startmachine.png");
+}
+
+#anchor{
+    -fx-background-image: url("Images/wallpaper.jpg");
+    -fx-background-repeat: no-repeat no-repeat;
+    -fx-background-size: 100% 100%;
+
+    /*-fx-background-size: 900 506;*/
+    -fx-background-position: center center;
+    /*-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);*/
+}
+
+#startvbox {
+    -fx-background-color: rgba(117, 41, 212, 0.77);
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-padding: 10;
+    -fx-spacing: 8;
+}
+
+.button {
+    -fx-background-color: rgba(160, 215, 224, 0.71);
+}
+
+.button:pressed:hover {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+.button:hover {
+    -fx-background-color: rgba(77, 204, 185, 0.76);
+    -fx-scale-y: 1.1;
+}
+
+.text-field
+{
+    -fx-background-color: rgba(0, 0, 0, 0), #ffffff, rgba(0, 0, 0, 0), #ffffff;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-padding: 0.166667em;
+}
+
+.text-field:hover
+{
+    -fx-background-color: rgba(0, 0, 0, 0), #909090, rgba(0, 0, 0, 0), #ffffff;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-padding: 0.166667em;
+}
+
+.text-field:focused
+{
+    /*-fx-background-color: rgba(0, 0, 0, 0), #009EF, rgba(0, 0, 0, 0), #ffffff;*/
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-padding: 0.166667em;
+}
+.label {
+    -fx-wrap-text: true;
+    -fx-text-fill: #e6ece2;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: #68685b;
+    -fx-background-insets: 0 0 0 0, 0 0 1 0;
+}
+
+/*#anchor {*/
+/*    -fx-background-color: #aecba4;*/
+/*}*/
+
+
+
+#optionsPane {
+    -fx-background-color: #b2a4cb;
+}
+
+    #vboxPati {
+        -fx-background-color: rgba(140, 128, 154, 0.98);
+        -fx-background-color: linear-gradient( #633687, #5e3aff);
+        -fx-border-color: black;
+    }
+
+#startgridPane {
+    -fx-background-color: rgb(59, 58, 58);
+}
+
+#loginGrid {
+    -fx-background-color: rgba(59, 58, 58, 0.28);
+}
+
+#startHbox {
+    fx-effect: dropshadow(three-pass-box, rgba(101, 100, 108, 0.66), 0.0, 25.0, 0.0, -5.0);
+    -fx-effect: dropshadow(three-pass-box, rgba(101, 100, 108, 0.66), 0.0, 25.0, 0.0,  5.0);
+    -fx-effect: dropshadow(three-pass-box, rgba(101, 100, 108, 0.66), 0.0, 25.0, 5.0,  0.0);
+    -fx-effect: dropshadow(three-pass-box, rgba(101, 100, 108, 0.66), 0.0, 25.0, -5.0, 0.0);
+}
+
+#vboxtable {
+    -fx-background-color: rgba(158, 99, 167, 0.68);
+
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+/*.table-view .table-cell {*/
+/*    -fx-alignment: CENTER-RIGHT;*/
+/*    !* The rest is from caspian.css *!*/
+
+/*    -fx-skin: "com.sun.javafx.scene.control.skin.TableCellSkin";*/
+/*    -fx-padding: 0.166667em; !* 2px, plus border adds 1px *!*/
+
+/*    -fx-background-color: transparent;*/
+/*    -fx-border-color: transparent -fx-table-cell-border-color transparent transparent;*/
+/*    -fx-border-width: 0.083333em; !* 1 *!*/
+/*    -fx-cell-size: 2.0em; !* 24 *!*/
+/*    -fx-text-fill: -fx-text-inner-color;*/
+/*}*/
+
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: #4c00ff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: #d900ff;
+}
+.table-row-cell:odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+/**
+++++++++++++++++++++++++++++++++++++++==============================
+*/
+
+/* Selected row */
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: rgba(165, 42, 42, 0.56);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Selected row when table not focused */
+.table-row-cell:filled:focused:selected {
+    -fx-background-color: rgba(252, 211, 80, 0.7);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Row hovered */
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: rgba(126, 26, 236, 0.58);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+/* Selected row hovered */
+.table-view:focused .table-row-cell:filled:focused:selected:hover {
+    -fx-background: -fx-accent;
+    -fx-background-color: yellow;
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Selected row hovered when table not focused */
+.table-view:row-selection .table-row-cell:filled:focused:hover {
+    -fx-background-color: rgba(0, 0, 255, 0.55);
+    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1, 2 2 3 2, 3 3 4 3;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+
+.table-view{
+    -fx-background-color: rgba(255, 192, 203, 0.66);
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
