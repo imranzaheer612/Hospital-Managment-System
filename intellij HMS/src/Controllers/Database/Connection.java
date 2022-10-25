@@ -6,7 +6,7 @@ public class Connection {
 
     static  final String url = "jdbc:mysql://127.0.0.1:3306/hospital";
     static  final String user = "root";
-    static  final String pass = "password";
+    static  final String pass = "51270700zrir";
 
 
     public static java.sql.Connection connector() {

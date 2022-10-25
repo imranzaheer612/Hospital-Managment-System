@@ -63,7 +63,7 @@ public class StartupPage implements Initializable {
 
     @FXML
     private void bills(ActionEvent event) throws IOException {
-        Parent newOrEditEntryPage = FXMLLoader.load(getClass().getResource("../View/Others/billOptions.fxml"));
+        Parent newOrEditEntryPage = FXMLLoader.load(getClass().getResource("../View/Bill/billOptions.fxml"));
         setting.getScene().setRoot(newOrEditEntryPage);
     }
 

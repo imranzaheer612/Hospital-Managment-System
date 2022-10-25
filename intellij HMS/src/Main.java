@@ -1,5 +1,3 @@
-package Controllers;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,19 +13,14 @@ public class Main extends Application {
 //        testingDB();
 //        presentDateTime();
 
-
-        Parent root = FXMLLoader.load(getClass().getResource("../View/UserAuthentication/loginPage.fxml"));
-//        Parent root = FXMLLoader.load(getClass().getResource("../View/startupPage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("./View/UserAuthentication/loginPage.fxml"));
+//        Parent root = FXMLLoader.load(getClass().getResource("./View/startupPage.fxml"));
         primaryStage.setTitle("Hospital");
         primaryStage.setScene(new Scene(root));
         primaryStage.setHeight(700);
         primaryStage.setWidth(1000);
         primaryStage.show();
     }
-
-
-
-
 
 
 
