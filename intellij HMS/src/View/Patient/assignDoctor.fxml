@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchor" prefHeight="565.0" prefWidth="849.0" stylesheets="@../style.css xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Patient.AssignDoctor">
+<AnchorPane fx:id="anchor" prefHeight="565.0" prefWidth="849.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Patient.AssignDoctor">
    <children>
       <GridPane fx:id="startgridPane" layoutX="162.0" layoutY="81.0" prefHeight="329.0" prefWidth="492.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="159.0" AnchorPane.topAnchor="81.0">
          <columnConstraints>
