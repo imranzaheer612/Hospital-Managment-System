@@ -70,17 +70,17 @@ public class UpdatePassword implements Initializable {
         return false;
 
     }
-//    @FXML
-//    private void updatePassword(ActionEvent event) throws IOException {
-//        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../fxfiles/authenticate/loginPage.fxml"));
-//        Parent diagnosisEntry  = loader.load();
-//
-//        if (bothIdExists()) {
-//            b_update.getScene().setRoot(diagnosisEntry);
-//        }
-//        else
-//            System.out.println("error here");
-//    }
+    @FXML
+    private void updatePassword(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../View/UserAuthentication/loginSetting.fxml"));
+        Parent diagnosisEntry  = loader.load();
+
+        if (bothIdExists()) {
+            b_update.getScene().setRoot(diagnosisEntry);
+        }
+        else
+            System.out.println("error here");
+    }
     @FXML
     private void back(ActionEvent event) throws IOException {
         Parent startup = FXMLLoader.load(getClass().getResource("../../View/startupPage.fxml"));
